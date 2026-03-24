@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-03-24T08:10:02.913Z",
+    "end": "2026-03-24T08:10:09.882Z",
+    "duration": 6969,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a0ef6079-d992-423b-bbda-d83c9c0e4b8d",
+      "title": "",
+      "fullFile": "cypress/e2e/commande.cy.js",
+      "file": "cypress/e2e/commande.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2a1de621-5dc4-4dae-b1ff-039cd1564f3d",
+          "title": "Test avec commandes personnalisées",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Connexion réussie avec la commande login",
+              "fullTitle": "Test avec commandes personnalisées Connexion réussie avec la commande login",
+              "timedOut": null,
+              "duration": 3293,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('tomsmith', 'SuperSecretPassword!');\ncy.contains('You logged into a secure area!').should('be.visible');",
+              "err": {},
+              "uuid": "776b62f2-5fe8-4127-be52-064045e5986f",
+              "parentUUID": "2a1de621-5dc4-4dae-b1ff-039cd1564f3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Connexion échouée avec la commande login",
+              "fullTitle": "Test avec commandes personnalisées Connexion échouée avec la commande login",
+              "timedOut": null,
+              "duration": 1258,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('mauvaisutilisateur', 'mauvaismdp');\ncy.contains('Your username is invalid!').should('be.visible');",
+              "err": {},
+              "uuid": "54662f0e-510b-4b8c-a158-9e6fa46a3fdd",
+              "parentUUID": "2a1de621-5dc4-4dae-b1ff-039cd1564f3d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "776b62f2-5fe8-4127-be52-064045e5986f",
+            "54662f0e-510b-4b8c-a158-9e6fa46a3fdd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4551,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

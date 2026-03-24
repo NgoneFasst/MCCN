@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-03-23T17:03:55.234Z",
+    "end": "2026-03-23T17:03:56.370Z",
+    "duration": 1136,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e148976f-9620-41ae-8fb7-fa7842e84056",
+      "title": "",
+      "fullFile": "cypress/e2e/data-cy.cy.js",
+      "file": "cypress/e2e/data-cy.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d9d50c21-e53d-4729-b9ed-ed094abc5b7e",
+          "title": "Test avec sélecteurs data-cy",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Vérifie que le titre est visible",
+              "fullTitle": "Test avec sélecteurs data-cy Vérifie que le titre est visible",
+              "timedOut": null,
+              "duration": 227,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataCy('titre').should('be.visible');\ncy.getByDataCy('titre').should('have.text', 'Bienvenue !');",
+              "err": {},
+              "uuid": "bd886b85-8835-4b1d-ba4d-41007b5e16ad",
+              "parentUUID": "d9d50c21-e53d-4729-b9ed-ed094abc5b7e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Vérifie que le formulaire est bien affiché",
+              "fullTitle": "Test avec sélecteurs data-cy Vérifie que le formulaire est bien affiché",
+              "timedOut": null,
+              "duration": 72,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataCy('champ-username').should('be.visible');\ncy.getByDataCy('champ-password').should('be.visible');\ncy.getByDataCy('btn-connexion').should('be.visible');",
+              "err": {},
+              "uuid": "f1a6e4ef-10eb-4201-ab6b-733653184caf",
+              "parentUUID": "d9d50c21-e53d-4729-b9ed-ed094abc5b7e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remplit le formulaire",
+              "fullTitle": "Test avec sélecteurs data-cy Remplit le formulaire",
+              "timedOut": null,
+              "duration": 751,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.getByDataCy('champ-username').type('monUtilisateur');\ncy.getByDataCy('champ-password').type('monMotDePasse');\ncy.getByDataCy('champ-username').should('have.value', 'monUtilisateur');\ncy.getByDataCy('champ-password').should('have.value', 'monMotDePasse');",
+              "err": {},
+              "uuid": "b014d7db-ece6-4204-8364-4c3977caf9c0",
+              "parentUUID": "d9d50c21-e53d-4729-b9ed-ed094abc5b7e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bd886b85-8835-4b1d-ba4d-41007b5e16ad",
+            "f1a6e4ef-10eb-4201-ab6b-733653184caf",
+            "b014d7db-ece6-4204-8364-4c3977caf9c0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1050,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

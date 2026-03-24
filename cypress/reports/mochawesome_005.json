@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-03-23T16:56:08.105Z",
+    "end": "2026-03-23T16:56:12.142Z",
+    "duration": 4037,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f1b4bce4-d02a-40f6-9d88-1e212b4d5a4a",
+      "title": "",
+      "fullFile": "cypress/e2e/mon-premier-test.cy.js",
+      "file": "cypress/e2e/mon-premier-test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1263bc88-3ca5-4416-8929-905be1f1e8fe",
+          "title": "Mon deuxième test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visite le site de démo Cypress",
+              "fullTitle": "Mon deuxième test Visite le site de démo Cypress",
+              "timedOut": null,
+              "duration": 880,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "0a948320-e59d-43fb-950f-f638fdf88bf5",
+              "parentUUID": "1263bc88-3ca5-4416-8929-905be1f1e8fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clique sur un lien",
+              "fullTitle": "Mon deuxième test Clique sur un lien",
+              "timedOut": null,
+              "duration": 514,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');\ncy.contains('type').click();\ncy.url().should('include', '/commands/actions');",
+              "err": {},
+              "uuid": "5b82d6f3-a555-48ca-8ada-a5693477ff10",
+              "parentUUID": "1263bc88-3ca5-4416-8929-905be1f1e8fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tape du texte dans un champ",
+              "fullTitle": "Mon deuxième test Tape du texte dans un champ",
+              "timedOut": null,
+              "duration": 443,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io/commands/actions');\ncy.get('.action-email').type('test@gmail.com');\ncy.get('.action-email').should('have.value', 'test@gmail.com');",
+              "err": {},
+              "uuid": "bc038cd0-9cae-4cc4-b51e-5b1329ebb6ab",
+              "parentUUID": "1263bc88-3ca5-4416-8929-905be1f1e8fe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0a948320-e59d-43fb-950f-f638fdf88bf5",
+            "5b82d6f3-a555-48ca-8ada-a5693477ff10",
+            "bc038cd0-9cae-4cc4-b51e-5b1329ebb6ab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1837,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

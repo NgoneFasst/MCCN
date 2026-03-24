@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-03-24T08:10:23.613Z",
+    "end": "2026-03-24T08:10:28.310Z",
+    "duration": 4697,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "406aefe3-edc6-4c62-8fdd-b7a5fdcaa6c3",
+      "title": "",
+      "fullFile": "cypress/e2e/intercept.cy.js",
+      "file": "cypress/e2e/intercept.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5fc4648f-c030-4c80-ae0a-0bdbc59a5e60",
+          "title": "Test avec cy.intercept()",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Vérifie que la page secure est bien chargée",
+              "fullTitle": "Test avec cy.intercept() Vérifie que la page secure est bien chargée",
+              "timedOut": null,
+              "duration": 2774,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('GET', '**/secure').as('securePage');\ncy.login('tomsmith', 'SuperSecretPassword!');\ncy.wait('@securePage').then(interception => {\n  expect(interception.response.statusCode).to.equal(200);\n});",
+              "err": {},
+              "uuid": "9a488123-552f-495f-8213-0dbcea1c9354",
+              "parentUUID": "5fc4648f-c030-4c80-ae0a-0bdbc59a5e60",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a488123-552f-495f-8213-0dbcea1c9354"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2774,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
