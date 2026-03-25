@@ -4,18 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "cypress run",
-  "rapport": "mochawesome-merge cypress/reports/mochawesome*.json > cypress/reports/rapport-final.json && marge cypress/reports/rapport-final.json --reportDir cypress/reports/html",
-  "test:rapport": "npm run test && npm run rapport"
-},
+    "test": "cypress run",
+    "rapport": "mochawesome-merge cypress/reports/mochawesome*.json > cypress/reports/rapport-final.json && marge cypress/reports/rapport-final.json --reportDir cypress/reports/html",
+    "test:rapport": "npm run test && npm run rapport"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
     "cypress": "^15.11.0",
     "mochawesome": "^7.1.4",
     "mochawesome-merge": "^5.1.1",
     "mochawesome-report-generator": "^6.3.2"
   }
+  ,
+  "cypress-cucumber-preprocessor": {
+  "nonGlobalStepDefinitions": false,
+  "stepDefinitions": "cypress/e2e/step_definitions/**/*.js"
+}
 }
