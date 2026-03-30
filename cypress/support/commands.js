@@ -29,6 +29,7 @@ Cypress.Commands.add('login', (username, password) => {
   cy.get('#password').type(password)
   cy.get('button[type="submit"]').click()
 })
+
 Cypress.Commands.add('getByDataCy', (selector) => {
   return cy.get(`[data-cy="${selector}"]`)
 })
